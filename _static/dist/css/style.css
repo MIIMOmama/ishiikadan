@@ -1,2 +1,25 @@
+@charset "UTF-8";
+.headerButton {
+  background-color: #978F10;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 19px 37px;
+}
 
+.headerButtonBody {
+  padding-left: 10px;
+}
+
+.aboutButton {
+  padding: 20px 52px;
+  border: solid 1px #707070;
+}
+
+.aboutButton--s {
+  padding: 20px 44px;
+}
+
+body {
+  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
 /*# sourceMappingURL=style.css.map */

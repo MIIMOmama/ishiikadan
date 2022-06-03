@@ -2,14 +2,14 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>Base HTML</title>
+  <title>石井花壇</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <meta name="keywords" content="温泉">
-  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
-  伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+  <meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
   <meta name="robots" content="noindex,nofollow">
   <meta http-equiv="content-language" content="ja" />
   <link rel="stylesheet" href="css/reset.css?v=1.0">
+  <!-- ベンダー系CSSはこれより上 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
   <link rel="stylesheet" href="css/style.css?v=1.0">
@@ -35,12 +35,16 @@
           </ul><!-- /.navList -->
         </nav><!-- /.headerNav -->
       </div><!-- /.headerWrap -->
-      <button class="headerButton">
-        <figure class="logoImg">
-          <img src="" alt="">
-        </figure><!-- /.logoImg -->
-          <a href="">宿泊予約</a>
-      </button><!-- /.headerButton -->
+      <a href="#" class="headerButton">
+        <span class="logoImgWrap">
+          <!--出し分け不要? <picture> -->
+            <!-- <source media="(min-width: 1500px)" srcset="img/icon/calender@2x.png"> -->
+            <!-- <source media="(min-width: 800px)" srcset="img/icon/calender.png"> -->
+            <img src="img/icon/calender.png" alt="カレンダーのアイコン画像">
+          </picture>
+        </span><!-- /.logoImgWrap -->
+        <span class="headerButtonBody">宿泊予約</span><!-- /.headerButtonBody -->
+      </a><!-- /.headerButton -->
     </div><!-- /.headerInner -->
   </header>
 
@@ -107,9 +111,9 @@
               ひたすらにゆったりと…。<br>
               最高級の「何もしない時間」をお過ごしください。
             </p><!-- /.aboutDetail -->
-            <button class="aboutButton">
+            <a href="#" class="aboutButton aboutButton--s">
               お部屋について
-            </button><!-- /.aboutButton -->
+            </a><!-- /.aboutButton -->
           </div><!-- /.aboutText -->
         </div><!-- /.aboutWrap -->
 
@@ -128,9 +132,9 @@
               あなたの人生史に残る「極上の感動」を<br>
               お約束します。
             </p><!-- /.aboutDetail -->
-            <button class="aboutButton">
+            <a href="#" class="aboutButton">
               料理について
-            </button><!-- /.aboutButton -->
+            </a><!-- /.aboutButton -->
           </div><!-- /.aboutText -->
         </div><!-- /.aboutWrap -->
 
@@ -148,9 +152,9 @@
               現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
               ご活用ください。
             </p><!-- /.aboutDetail -->
-            <button class="aboutButton">
+            <a href="#" class="aboutButton">
               温泉について
-            </button><!-- /.aboutButton -->
+            </a><!-- /.aboutButton -->
           </div><!-- /.aboutText -->
         </div><!-- /.aboutWrap -->
 
