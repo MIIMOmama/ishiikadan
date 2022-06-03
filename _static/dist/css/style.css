@@ -1,4 +1,37 @@
 @charset "UTF-8";
+.headerInner {
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.headerWrap {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  background-color: red;
+  display: flex;
+  margin-right: 120px;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 15px;
+}
+
+.navList {
+  display: flex;
+}
+
 .headerButton {
   background-color: #978F10;
   color: #ffffff;
@@ -17,6 +50,28 @@
 
 .aboutButton--s {
   padding: 20px 44px;
+}
+
+.cardContainer {
+  display: flex;
+}
+
+.card {
+  width: 331px;
+  margin-right: 94px;
+}
+
+.card:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cardImg {
+  margin-bottom: 32px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 36px;
 }
 
 body {
