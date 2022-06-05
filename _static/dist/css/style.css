@@ -32,6 +32,22 @@
   display: flex;
 }
 
+.conceptSec {
+  background-image: url(../img/bg/textbg.png);
+}
+
+.planSec {
+  background-image: url(../img/bg/centerbg.png);
+}
+
+.accessSec {
+  background-image: url(../img/bg/textbg.png);
+}
+
+.linkSec {
+  background-image: url(../img/bg/footerbg.png);
+}
+
 .headerButton {
   background-color: #978F10;
   color: #ffffff;
