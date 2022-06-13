@@ -35,10 +35,12 @@ header {
 }
 
 .firstViewSec {
+  width: 100%;
   position: relative;
 }
 
 .firstViewWrap {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -75,9 +77,43 @@ header {
 }
 
 .conceptSec {
-  width: 100%;
   background-image: url(../img/bg/textbg.png);
   background-size: cover;
+  width: 100%;
+}
+
+.conceptWrap {
+  padding: 149px 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.conceptTitle {
+  font-size: 1.75rem;
+  writing-mode: vertical-rl;
+  margin-left: 118px;
+  line-height: 1.8;
+  letter-spacing: 0.5rem;
+}
+
+.conceptTitle--top {
+  display: block;
+  margin-top: -60px;
+}
+
+.conceptText {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin-left: 118px;
+  line-height: 1.8;
+  letter-spacing: 0.5rem;
+}
+
+.conceptEnd {
+  writing-mode: vertical-rl;
+  text-align: right;
+  letter-spacing: 0.5rem;
 }
 
 .planSec {
