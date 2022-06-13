@@ -9,6 +9,9 @@
   <meta name="robots" content="noindex,nofollow">
   <meta http-equiv="content-language" content="ja" />
   <link rel="stylesheet" href="css/reset.css?v=1.0">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+
   <!-- ベンダー系CSSはこれより上 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin">
@@ -29,9 +32,9 @@
         </div><!-- /.headerLogo -->
         <nav class="headerNav" id="js-nav">
           <ul class="navList">
-            <li class="navList_item"><a href="#room">お部屋</a></li><!-- /.navList_item -->
-            <li class="navList_item"><a href="#meal">お料理</a></li><!-- /.navList_item -->
-            <li class="navList_item"><a href="#onsen">温泉</a></li><!-- /.navList_item -->
+            <li class="navListItem"><a href="#room">お部屋</a></li><!-- /.navList_item -->
+            <li class="navListItem"><a href="#meal">お料理</a></li><!-- /.navList_item -->
+            <li class="navListItem"><a href="#onsen">温泉</a></li><!-- /.navList_item -->
           </ul><!-- /.navList -->
         </nav><!-- /.headerNav -->
       </div><!-- /.headerWrap -->
@@ -54,12 +57,27 @@
     <div class="mainInner">
       <section class="firstViewSec">
         <div class="firstViewWrap">
-          <h2 class="firstViewText">
-            頑張る人の<br>
-            頑張らない時間
-          </h2><!-- /.firstViewText -->
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="img/main/mainbg01.jpg" alt="" class="fistViewImg"></div><!-- /.firstViewWrap -->
+              </div><!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="img/main/mainbg02.jpg" alt="" class="fistViewImg"></div><!-- /.firstViewWrap -->
+              </div><!-- /.swiper-slide -->
+              <div class="swiper-slide">
+                <div class="slide-img"><img src="img/main/mainbg03.jpg" alt="" class="fistViewImg"></div><!-- /.firstViewWrap -->
+              </div><!-- /.swiper-slide -->
+            </div><!-- /.swiper-wrapper -->
+          </div><!-- /.swiper-container -->
         </div><!-- /.firstViewWrap -->
+
+        <h2 class="firstViewText">
+          頑張る人の<br>
+          頑張らない時間
+        </h2><!-- /.firstViewText -->
       </section><!-- /.firstViewSec -->
+
 
   <!-- ------------------↑ファーストビューend---------------------- -->
 
@@ -392,7 +410,10 @@
   </footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="js/aos.js" defer></script>
+  <script src="js/index.js" defer></script>
+
 
 </body>
 </html>

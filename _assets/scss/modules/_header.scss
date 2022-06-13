@@ -1,6 +1,13 @@
 
+header {
+    position: fixed;
+    z-index: 99;
+    margin-bottom: -80px;
+    width: 100%;
+}
+
 .headerInner {
-    max-width: 1200px;
+    max-width: 1900px;
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -16,18 +23,13 @@
 }
 
 .headerLogo {
-    background-color: red;
     display: flex;
     margin-right: 120px;
 }
 .logoText {
     font-size: 2rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #fff;
     margin-left: 15px;
 }
 
-
-.navList {
-    display: flex;
-}
