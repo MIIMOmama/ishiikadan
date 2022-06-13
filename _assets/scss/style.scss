@@ -1,3 +1,18 @@
 @charset "UTF-8";
 
-@use './modules/index';
+@use './base/base';
+@use './base/reset';
+
+@use './modules/header';
+@use './modules/main';
+@use './modules/gnav';
+@use './modules/footer';
+@use './modules/content';
+
+
+
+@use './mixin/animation';
+@use './mixin/button';
+@use './mixin/font';
+@use './mixin/over.scss';
+@use './mixin/etc';
