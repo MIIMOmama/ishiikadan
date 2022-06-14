@@ -182,8 +182,15 @@ header {
   padding: 60px 20px 144px 20px;
 }
 
+.notionSec {
+  max-width: 1920px;
+  padding: 60px 20px;
+}
+
 .accessSec {
   background-image: url(../img/bg/textbg.png);
+  max-width: 1920px;
+  padding: 60px 20px;
 }
 
 .linkSec {
@@ -222,6 +229,33 @@ header {
 .cardTitle {
   font-size: 1.25rem;
   margin-bottom: 36px;
+}
+
+.mediaContainer {
+  max-width: 1186px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.media {
+  display: flex;
+  background-color: #F6F6F6;
+  width: 530px;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 15px 39px 15px 10px;
+}
+
+.mediaBody {
+  width: 100%;
+  margin-left: 30px;
+}
+
+.mediaDate {
+  font-size: 0.875rem;
+  margin-bottom: 10px;
 }
 
 .headerButton {
