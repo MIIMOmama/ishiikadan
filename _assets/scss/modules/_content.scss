@@ -1,5 +1,8 @@
 .cardContainer {
     display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 
@@ -20,3 +23,7 @@
     font-size: 1.25rem;
     margin-bottom: 36px;
 }
+
+
+
+

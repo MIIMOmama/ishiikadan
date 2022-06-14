@@ -8,7 +8,6 @@ let swipeOption = {
     disableOnInteraction: false,
     },
     speed: 2000,
-
     }
 
 new Swiper('.swiper-container', swipeOption);
