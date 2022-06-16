@@ -193,6 +193,23 @@ header {
   padding: 60px 20px;
 }
 
+.accessWrap {
+  display: flex;
+  width: 1200px;
+  margin: 70px auto;
+}
+
+.mapWrap {
+  max-width: 792px;
+  height: 592px;
+  margin: 0 auto;
+}
+
+.mapWrap__map {
+  width: 100%;
+  height: 100%;
+}
+
 .linkSec {
   background-image: url(../img/bg/footerbg.png);
 }
