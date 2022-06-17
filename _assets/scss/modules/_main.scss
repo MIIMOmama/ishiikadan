@@ -1,3 +1,4 @@
+
 .firstViewSec {
     width: 100%;
     position: relative;
@@ -5,6 +6,9 @@
 .firstViewWrap {
     width: 100%;
     overflow: hidden;
+}
+.firstViewImg {
+    max-width: 100%;
 }
 .firstViewText {
     z-index: 999;
@@ -42,12 +46,13 @@
 
 .conceptSec {
     background-image: url(../img/bg/textbg.png);
-    background-size: cover;
+    background-size: contain;
     width: 100%;
 
 }
 
 .conceptWrap {
+    width: 100%;
     padding: 149px 20px;
     display: flex;
     flex-direction: row-reverse;
@@ -128,6 +133,10 @@
     padding-left: 20px;
 }
 
+.aboutContainer:last-child {
+    margin-bottom: 78px;
+}
+
 
 
 .logoImg {
@@ -159,6 +168,7 @@
 .notionSec {
     max-width: 1920px;
     padding: 60px 20px;
+    margin: 0 auto;
 }
 
 
@@ -169,15 +179,25 @@
 
 .accessSec {
     background-image: url(../img/bg/textbg.png);
-    max-width: 1920px;
-    padding: 60px 20px;
+    width: 100%;
+    padding: 60px 20px 110px 20px;
 }
 
 .accessWrap {
     display: flex;
-    width: 1200px;
+    width: 1350px;
     margin: 70px auto;
+    align-items: center;
 }
+
+.accessTextWrap {
+    width: 100%;
+    line-height: 2;
+    margin-left: 83px;
+}
+
+
+
 
 .mapWrap {
     max-width: 792px;
@@ -197,4 +217,46 @@
 
 .linkSec {
     background-image: url(../img/bg/footerbg.png);
+    width: 100%;
+    padding: 64px 20px 61px 20px;
 }
+.linkNav {
+    width: 100px;
+    margin: 0 auto 96px;
+}
+
+.linkList {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    letter-spacing: 0.8rem;
+}
+
+.linkItem {
+    writing-mode: vertical-rl;
+}
+
+.linkTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.addressWrap {
+    display: flex;
+    margin: 72px auto 23px;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.address {
+    letter-spacing: 0.2rem;
+}
+
+.telWrap {
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
