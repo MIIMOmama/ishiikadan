@@ -7,10 +7,10 @@
     width: 100%;
     overflow: hidden;
 }
-.firstViewImg {
+.firstView_img {
     max-width: 100%;
 }
-.firstViewText {
+.firstView_text {
     z-index: 999;
     position: absolute;
     color: #fff;
@@ -58,25 +58,25 @@
     flex-direction: row-reverse;
     justify-content: center;
 }
-.conceptTitle {
+.concept_title {
     font-size: 1.75rem;
     writing-mode: vertical-rl;
     margin-left: 118px;
     line-height: 1.8;
     letter-spacing: 0.5rem;
 }
-.conceptTitle--top {
+.concept_title-high {
     display: block;
     margin-top: -60px;
 }
-.conceptText {
+.concept_text {
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin-left: 118px;
     line-height: 1.8;
     letter-spacing: 0.5rem;
 }
-.conceptEnd {
+.concept_text-end {
     writing-mode: vertical-rl;
     text-align: right;
     letter-spacing: 0.5rem;
@@ -104,33 +104,38 @@
     margin-right: 137px;
 }
 
-.aboutImg {
+.about_img {
     max-width: 100%;
 }
 
-.aboutText {
+.aboutWrap {
     padding-right: 20px;
     margin-top: 20px;
 }
 
-.aboutTitle {
+.about_title {
     font-size: 2.25rem;
     margin-bottom: 95px;
 }
 
-.aboutDetail {
+.about_text {
+    line-height: 2;
     margin-bottom: 75px;
 }
 
-.aboutContainer--reverse {
+.aboutContainer-reverse {
     flex-direction: row-reverse;
     justify-content: right;
     margin-right: 0;
 }
 
-.aboutText--reverse {
-    margin: 20px 137px 0 0;
+.aboutWrap-reverse {
     padding-left: 20px;
+}
+
+.about_text-reverse {
+    line-height: 2;
+    margin: 20px 137px 75px 0;
 }
 
 .aboutContainer:last-child {
@@ -139,7 +144,7 @@
 
 
 
-.logoImg {
+.logoImgWrap {
     width: 40px;
     height: 40px;
     margin: 0 auto 20px;
@@ -157,7 +162,7 @@
 .planSec {
     width: 100%;
     background-image: url(../img/bg/centerbg.png);
-    background-size: contain;
+    background-size: cover;
     padding: 60px 20px 144px 20px;
 
 }
@@ -220,27 +225,7 @@
     width: 100%;
     padding: 64px 20px 61px 20px;
 }
-.linkNav {
-    width: 100px;
-    margin: 0 auto 96px;
-}
 
-.linkList {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    letter-spacing: 0.8rem;
-}
-
-.linkItem {
-    writing-mode: vertical-rl;
-}
-
-.linkTitle {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
 
 .addressWrap {
     display: flex;

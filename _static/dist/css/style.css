@@ -22,13 +22,13 @@ header {
   align-items: center;
 }
 
-.headerLogo {
+.headerLogoWrap {
   display: flex;
   margin-right: 120px;
   align-items: center;
 }
 
-.logoText {
+.headerLogo_text {
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
@@ -45,11 +45,11 @@ header {
   overflow: hidden;
 }
 
-.firstViewImg {
+.firstView_img {
   max-width: 100%;
 }
 
-.firstViewText {
+.firstView_text {
   z-index: 999;
   position: absolute;
   color: #fff;
@@ -95,7 +95,7 @@ header {
   justify-content: center;
 }
 
-.conceptTitle {
+.concept_title {
   font-size: 1.75rem;
   writing-mode: vertical-rl;
   margin-left: 118px;
@@ -103,12 +103,12 @@ header {
   letter-spacing: 0.5rem;
 }
 
-.conceptTitle--top {
+.concept_title-high {
   display: block;
   margin-top: -60px;
 }
 
-.conceptText {
+.concept_text {
   writing-mode: vertical-rl;
   text-orientation: upright;
   margin-left: 118px;
@@ -116,7 +116,7 @@ header {
   letter-spacing: 0.5rem;
 }
 
-.conceptEnd {
+.concept_text-end {
   writing-mode: vertical-rl;
   text-align: right;
   letter-spacing: 0.5rem;
@@ -140,40 +140,45 @@ header {
   margin-right: 137px;
 }
 
-.aboutImg {
+.about_img {
   max-width: 100%;
 }
 
-.aboutText {
+.aboutWrap {
   padding-right: 20px;
   margin-top: 20px;
 }
 
-.aboutTitle {
+.about_title {
   font-size: 2.25rem;
   margin-bottom: 95px;
 }
 
-.aboutDetail {
+.about_text {
+  line-height: 2;
   margin-bottom: 75px;
 }
 
-.aboutContainer--reverse {
+.aboutContainer-reverse {
   flex-direction: row-reverse;
   justify-content: right;
   margin-right: 0;
 }
 
-.aboutText--reverse {
-  margin: 20px 137px 0 0;
+.aboutWrap-reverse {
   padding-left: 20px;
+}
+
+.about_text-reverse {
+  line-height: 2;
+  margin: 20px 137px 75px 0;
 }
 
 .aboutContainer:last-child {
   margin-bottom: 78px;
 }
 
-.logoImg {
+.logoImgWrap {
   width: 40px;
   height: 40px;
   margin: 0 auto 20px;
@@ -188,7 +193,7 @@ header {
 .planSec {
   width: 100%;
   background-image: url(../img/bg/centerbg.png);
-  background-size: contain;
+  background-size: cover;
   padding: 60px 20px 144px 20px;
 }
 
@@ -234,28 +239,6 @@ header {
   padding: 64px 20px 61px 20px;
 }
 
-.linkNav {
-  width: 100px;
-  margin: 0 auto 96px;
-}
-
-.linkList {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  letter-spacing: 0.8rem;
-}
-
-.linkItem {
-  writing-mode: vertical-rl;
-}
-
-.linkTitle {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .addressWrap {
   display: flex;
   margin: 72px auto 23px;
@@ -274,13 +257,29 @@ header {
   justify-content: space-between;
 }
 
-.navList {
+.globalNav_list {
   display: flex;
   color: #fff;
 }
 
-.navListItem {
+.globalNav_item {
   margin-right: 30px;
+}
+
+.linkNav {
+  width: 100px;
+  margin: 0 auto 96px;
+}
+
+.linkNav_list {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  letter-spacing: 0.8rem;
+}
+
+.linkNav_item {
+  writing-mode: vertical-rl;
 }
 
 .footer {
@@ -294,6 +293,12 @@ header {
   padding: 23px 0;
 }
 
+.footerLogo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .cardContainer {
   display: flex;
   justify-content: center;
@@ -302,7 +307,7 @@ header {
 }
 
 .card {
-  width: 331px;
+  width: 340px;
   margin-right: 94px;
 }
 
@@ -310,13 +315,18 @@ header {
   margin-right: 0;
 }
 
-.cardImg {
+.card_img {
   margin-bottom: 32px;
 }
 
-.cardTitle {
+.card_title {
   font-size: 1.25rem;
   margin-bottom: 36px;
+  line-height: 2;
+}
+
+.card_text {
+  line-height: 2;
 }
 
 .mediaContainer {
@@ -336,24 +346,24 @@ header {
   padding: 15px 39px 15px 10px;
 }
 
-.mediaBody {
+.media_body {
   width: 100%;
   margin-left: 30px;
 }
 
-.mediaDate {
+.media_date {
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
-.headerButton {
+.globalButton {
   background-color: #978F10;
   color: #ffffff;
   font-weight: bold;
   padding: 19px 37px;
 }
 
-.headerButtonBody {
+.globalButton_body {
   padding-left: 10px;
 }
 
