@@ -7,6 +7,11 @@ header {
     width: 100%;
 }
 
+.header-scroll {
+    background-color: #fff;
+    transition: 1s;
+}
+
 .headerInner {
     max-width: 1900px;
     height: 80px;
@@ -36,3 +41,6 @@ header {
     margin-left: 15px;
 }
 
+.headerLogo_text-scroll {
+    color: #000;
+}
