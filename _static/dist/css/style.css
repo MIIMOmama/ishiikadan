@@ -44,6 +44,18 @@ header {
   color: #000;
 }
 
+.headerLogo_img-hide {
+  display: none;
+}
+
+#js_logo {
+  display: block;
+}
+
+#js_hide {
+  display: none;
+}
+
 .firstViewSec {
   width: 100%;
   position: relative;
