@@ -20,6 +20,52 @@
 <body>
 
   <header>
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <input type="button" class="modalButton-close" id="modalButton-close" value="×">
+        <p class="reserve_title">
+          宿泊予約
+        </p><!-- /.reserve_title -->
+          <div class="reserve_item">
+            <label for="username" class="reserve_title">
+              お名前
+            </label><!-- /.reserve_title -->
+            <div class="reserve_body">
+              <div class="input-field">
+                <input type="text" name="username" id="username" required placeholder="例：石井正悟">
+              </div><!-- /.input-field -->
+            </div><!-- /.reserve_body -->
+          </div><!-- /.reserve_item -->
+
+          <div class="reserve_item">
+            <label for="email" class="reserve_title">
+              メールアドレス
+            </label><!-- /.reserve_title -->
+            <div class="reserve_body">
+              <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="例：Example@example.com">
+              </div><!-- /.input-field -->
+            </div><!-- /.reserve_body -->
+          </div><!-- /.reserve_item -->
+
+          <div class="reserve_item">
+            <label for="email" class="reserve_title">
+              ご希望プラン<span>（空いているプランのみ表示されます）</span>
+            </label><!-- /.reserve_title -->
+            <div class="reserve_body">
+              <select name="select" id="" class="select">
+                <option value="">プランを選択してください</option>
+                <option value="1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン                </option>
+                <option value="2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              </select><!-- /#.select -->
+            </div><!-- /.reserve_body -->
+          </div><!-- /.reserve_item -->
+          
+          <a href="#contact" class="reserve_button">送信</a>
+      </div><!-- /.modal_content -->
+    </div><!-- /#modal.modal -->
+
     <div class="headerInner">
       <div class="headerWrap">
         <div class="headerLogoWrap">
@@ -39,7 +85,7 @@
           </ul><!-- /.globalNav_list -->
         </nav><!-- /.globalNav -->
       </div><!-- /.headerWrap -->
-      <a href="#" class="globalButton">
+      <a href="#" class="globalButton" id="modalButton">
         <span class="logoImgWrap">
           <!--出し分け不要? <picture> -->
             <!-- <source media="(min-width: 1500px)" srcset="img/icon/calender@2x.png"> -->

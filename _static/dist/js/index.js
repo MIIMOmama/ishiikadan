@@ -14,6 +14,8 @@ new Swiper('.swiper-container', swipeOption);
 
 
 
+// ↓スクロールと同時にヘッダー変化
+
 window.addEventListener("scroll",function() {
     const header = document.querySelector("header");
     const h1 = document.querySelector("h1");
@@ -33,4 +35,20 @@ window.addEventListener("scroll",function() {
     
     }
 });
+
+
+// ↓モーダルウインドウ表示
+
+const open = document.getElementById('modalButton');
+const close = document.getElementById('modalButton-close');
+const modal = document.getElementById('modal');
+
+open.addEventListener('click',function() {
+    modal.style.display = 'block';
+});
+
+close.addEventListener('click',function() {
+    modal.style.display = 'none';
+});
+
 
