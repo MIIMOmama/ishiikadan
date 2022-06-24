@@ -40,7 +40,7 @@ window.addEventListener("scroll",function() {
 // ↓モーダルウインドウ表示
 
 const open = document.getElementById('modalButton');
-const close = document.getElementById('modalButton-close');
+const close = document.querySelector('.modalButton-close');
 const modal = document.getElementById('modal');
 
 
@@ -48,9 +48,9 @@ open.addEventListener('click', function(){
     modal.classList.toggle('is-show');
 });
 
-close.addEventListener('click', function(){
+close.addEventListener('click', function() {
     modal.classList.toggle('is-show');
-});
+})
 
 addEventListener('click', function(close_bg){
     if(close_bg.target === modal){
@@ -58,16 +58,8 @@ addEventListener('click', function(close_bg){
     }
 })
 
-// open.addEventListener('click', function() {
-//     modal.style.display = 'block';
-// })
 
-// close.addEventListener('click', function() {
-//     modal.style.display = 'none';
-// })
-
-
-
+// ↓flatpicker
 const config = {
     mode: "range",
     dateFormat: "Y-m-d",
