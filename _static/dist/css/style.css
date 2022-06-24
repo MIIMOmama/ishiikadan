@@ -383,7 +383,12 @@ header {
 
 .modal {
   display: none;
+}
+
+.is-show {
+  display: block;
   background: rgba(255, 255, 255, 0.3);
+  transition: 5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -395,6 +400,11 @@ header {
   background: #fff;
   width: 500px;
   margin: 25% auto;
+}
+
+.modalButton-close {
+  border: none;
+  font-size: 3rem;
 }
 
 .globalButton {
