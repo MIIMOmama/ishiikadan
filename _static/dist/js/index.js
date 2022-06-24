@@ -65,3 +65,14 @@ addEventListener('click', function(close_bg){
 // close.addEventListener('click', function() {
 //     modal.style.display = 'none';
 // })
+
+
+
+const config = {
+    mode: "range",
+    dateFormat: "Y-m-d",
+    minDate:"today",
+    local:"ja"
+}
+flatpickr('#flatpickr', config);
+
