@@ -102,8 +102,8 @@
       <a href="#" class="globalButton" id="modalButton">
         <span class="logoImgWrap">
           <!--出し分け不要? <picture> -->
-            <!-- <source media="(min-width: 1500px)" srcset="img/icon/calender@2x.png"> -->
-            <!-- <source media="(min-width: 800px)" srcset="img/icon/calender.png"> -->
+            <!-- <source media"(min-width: 1500px)" srcset="img/icon/calender@2x.png"> -->
+            <!-- <source media"(min-width: 800px)" srcset="img/icon/calender.png"> -->
             <img src="img/icon/calender.png" class="globalButton_img" alt="カレンダーのアイコン画像">
           <!-- </picture> -->
         </span><!-- /.logoImgWrap -->
@@ -315,11 +315,23 @@
           お知らせ
         </h2><!-- /.level2Heading -->
 
-        <div class="notionItems">
-          <!-- タブ設定 -->
-        </div><!-- /.notionItems -->
+        <ul class="tabMenu">
+          <li class="tabMenu_item">
+            <span class="tabTrigger js-tab-trigger is-active" data-id="tab01">
+              営業情報
+            </span><!-- /.tabTrigger -->
+          </li><!-- /.tabMenu_item -->
+          <li class="tabMenu_item">
+            <span class="tabTrigger js-tab-trigger" data-id="tab02">
+              その他
+            </span><!-- /.tabTrigger -->
 
-        <div class="mediaContainer">
+          </li>
+          <!-- /.tabMenu_item -->
+        </ul><!-- /.tabMenu -->
+
+        <div class="mediaContainer tabContent">
+          <div class="tabContent_item js-tab-target is-active" id="tab01">
 
           <div class="media">
             <figure class="mediaImgWrap">
@@ -333,7 +345,7 @@
               年末最後の営業日は27日になります。
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
+          </div><!-- /.media-->
 
           <div class="media">
             <figure class="mediaImgWrap">
@@ -347,7 +359,7 @@
               年末最後の営業日のお知らせ
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
+          </div><!-- /.media-->
 
           <div class="media">
             <figure class="mediaImgWrap">
@@ -362,7 +374,7 @@
               お願いします。
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
+          </div><!-- /.media-->
 
           <div class="media">
             <figure class="mediaImgWrap">
@@ -376,8 +388,10 @@
               年末最後の営業日のお知らせ
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
+          </div><!-- /.media-->
+        </div><!-- /.tabContent_item -->
 
+          <div class="tabContent_item js-tab-target" id="tab02">
           <div class="media">
             <figure class="mediaImgWrap">
               <img src="img/main/news01.jpg" alt="" class="media_img">
@@ -391,7 +405,7 @@
               させていただきます。  
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
+          </div><!-- /.media-->
 
           <div class="media">
             <figure class="mediaImgWrap">
@@ -405,8 +419,8 @@
               年末最後の営業日のお知らせ
               </p><!-- /.media_text -->
             </div><!-- /.media_body -->
-          </div><!-- /.media -->
-
+          </div><!-- /.media-->
+        </div><!-- /.tabContent_item -->
         </div><!-- /.mediaContainer -->
 
       </section><!-- /.notionSec -->

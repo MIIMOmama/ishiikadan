@@ -355,10 +355,8 @@ header {
 }
 
 .mediaContainer {
-  max-width: 1186px;
-  display: flex;
+  max-width: 1210px;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -456,6 +454,34 @@ header {
 
 .select:invalid {
   color: #797878;
+}
+
+.tabMenu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 49px;
+}
+
+.tabTrigger {
+  cursor: pointer;
+  display: block;
+  margin: 0 26px;
+}
+
+.tabTrigger.is-active {
+  border-bottom: 1px solid #707070;
+}
+
+.tabContent_item {
+  display: none;
+}
+
+.tabContent_item.is-active {
+  max-width: 1210px;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .globalButton {
