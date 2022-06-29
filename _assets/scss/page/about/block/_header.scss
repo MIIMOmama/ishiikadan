@@ -1,0 +1,39 @@
+
+
+header {
+    position: fixed;
+    z-index: 99;
+    margin-bottom: -80px;
+    width: 100%;
+}
+
+
+.headerInner {
+    max-width: 1900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.headerWrap {
+    display: flex;
+    align-items: center;
+}
+
+.headerLogoWrap {
+    display: flex;
+    margin-right: 120px;
+    align-items: center;
+}
+
+.headerLogo_text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-left: 15px;
+}
+
