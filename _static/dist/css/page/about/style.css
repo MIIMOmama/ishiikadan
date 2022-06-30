@@ -2,7 +2,6 @@
 header {
   position: fixed;
   z-index: 99;
-  margin-bottom: -80px;
   width: 100%;
   background-color: #fff;
 }
@@ -197,6 +196,28 @@ footer {
   width: 40px;
   height: 40px;
   margin: 0 auto 20px;
+}
+
+.mainViewContainer {
+  position: relative;
+  bottom: -80px;
+  margin-bottom: 80px;
+}
+
+.mainViewWrap {
+  max-width: 100%;
+}
+
+.mainView_img {
+  width: 100%;
+}
+
+.mainView_title {
+  position: absolute;
+  top: 46%;
+  right: 47%;
+  color: #fff;
+  font-size: 2.125rem;
 }
 
 .linkSec {
