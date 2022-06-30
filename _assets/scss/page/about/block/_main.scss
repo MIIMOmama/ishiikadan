@@ -1,0 +1,30 @@
+.logoImgWrap {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 20px;
+}
+
+.linkSec {
+    background-image: url(../../../img/bg/footerbg.png);
+    width: 100%;
+    padding: 64px 20px 61px 20px;
+}
+
+
+.addressWrap {
+    display: flex;
+    margin: 72px auto 23px;
+    justify-content: space-between;
+    width: 350px;
+}
+
+.address {
+    letter-spacing: 0.2rem;
+}
+
+.telWrap {
+    margin: 0 auto;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}

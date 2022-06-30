@@ -124,7 +124,7 @@ header {
 
 .globalNav_list {
   display: flex;
-  color: #fff;
+  color: #000;
 }
 
 .globalNav_list-scroll {
@@ -174,5 +174,22 @@ header {
 
 body {
   font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+}
+
+.footer {
+  background-color: #000;
+  width: 100%;
+}
+
+.footer__copyright {
+  text-align: center;
+  color: #fff;
+  padding: 23px 0;
+}
+
+.footerLogoWrap {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
