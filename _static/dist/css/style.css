@@ -4,6 +4,7 @@ header {
   z-index: 99;
   margin-bottom: -80px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .header-scroll {
@@ -63,11 +64,8 @@ header {
 
 .firstViewWrap {
   width: 100%;
+  max-height: 1079px;
   overflow: hidden;
-}
-
-.firstView_img {
-  max-width: 100%;
 }
 
 .firstView_text {
@@ -87,7 +85,7 @@ header {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 .swiper-slide-active .slide-img,
@@ -96,15 +94,22 @@ header {
   animation: zoomUp 10s linear 0s 1 normal both;
 }
 
+.slide-img {
+  height: 1079px;
+}
+
 .slide-img img {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
 }
 
 .conceptSec {
   background-image: url(../img/bg/textbg.png);
   background-size: contain;
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -215,6 +220,7 @@ header {
   width: 100%;
   background-image: url(../img/bg/centerbg.png);
   background-size: cover;
+  box-sizing: border-box;
   padding: 60px 20px 144px 20px;
 }
 
@@ -226,6 +232,7 @@ header {
 
 .accessSec {
   background-image: url(../img/bg/textbg.png);
+  box-sizing: border-box;
   width: 100%;
   padding: 60px 20px 110px 20px;
 }
@@ -255,7 +262,8 @@ header {
 }
 
 .linkSec {
-  background-image: url(../img/bg/footerbg.png);
+  background: url(../img/bg/footerbg.png);
+  box-sizing: border-box;
   width: 100%;
   padding: 64px 20px 61px 20px;
 }
@@ -505,6 +513,6 @@ header {
 }
 
 body {
-  font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”, “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”, “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 /*# sourceMappingURL=style.css.map */
