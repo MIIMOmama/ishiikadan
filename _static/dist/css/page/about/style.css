@@ -123,6 +123,31 @@ header {
   color: #797878;
 }
 
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  list-style: none;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  padding: 0 0.2em;
+  color: #555;
+}
+
+.breadcrumb li:last-of-type::after {
+  content: " ";
+}
+
+.breadcrumb_item:hover {
+  text-decoration: underline;
+}
+
 .globalNav_list {
   display: flex;
   color: #000;
