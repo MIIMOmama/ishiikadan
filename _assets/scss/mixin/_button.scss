@@ -16,3 +16,22 @@
 .aboutButton--s{
     padding: 20px 44px;
 }
+
+// 次回からmixinで定義する
+
+$initType: 'normal';
+@mixin _btn($type:$initType){
+
+  //共通スタイル
+
+  //サイト共通ボタンのスタイル1
+@if( $type == 'normal' ){
+    //スタイル
+}
+
+  //サイト共通ボタンのスタイル2
+@else if( $type == 'large' ){
+    //スタイル
+}
+
+}

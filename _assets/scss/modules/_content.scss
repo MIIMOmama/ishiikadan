@@ -1,18 +1,33 @@
+@use "../mixin" as m;
+
 .cardContainer {
     display: flex;
     justify-content: center;
     max-width: 1920px;
     margin: 0 auto;
+
+    @include m.pc {
+        display: block;
+        text-align: center;
+    }
 }
 
 
 .card {
     width: 340px;
     margin-right: 94px;
+
+    @include m.pc {
+        margin: 0 auto 50px;
+    }
 }
 
 .card:nth-of-type(3n) {
     margin-right: 0;
+    
+    @include m.pc {
+        margin: 0 auto 50px;
+    }
 }
 
 .card_img {
@@ -44,6 +59,10 @@
     height: 100px;
     margin-bottom: 20px;
     padding: 15px 39px 15px 10px;
+
+    @include m.pc {
+        margin: 0 auto 20px;
+    }
 }
 
 .media_body {

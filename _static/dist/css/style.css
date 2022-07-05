@@ -158,12 +158,16 @@ header {
 .aboutContainer {
   display: flex;
   max-width: 1920px;
-  max-height: 545px;
   margin-bottom: 122px;
+}
+@media screen and (max-width: 1080px) {
+  .aboutContainer {
+    display: block;
+  }
 }
 
 .aboutImgWrap {
-  max-width: 1050px;
+  width: 100%;
   margin-right: 137px;
 }
 
@@ -172,8 +176,13 @@ header {
 }
 
 .aboutWrap {
-  padding-right: 20px;
-  margin-top: 20px;
+  padding: 20px 20px 0 0;
+}
+@media screen and (max-width: 1080px) {
+  .aboutWrap {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 .about_title {
@@ -193,12 +202,23 @@ header {
 }
 
 .aboutWrap-reverse {
-  padding-left: 20px;
+  padding: 20px 0 0 20px;
+}
+@media screen and (max-width: 1080px) {
+  .aboutWrap-reverse {
+    padding: 20px;
+    text-align: center;
+  }
 }
 
 .about_text-reverse {
   line-height: 2;
   margin: 20px 137px 75px 0;
+}
+@media screen and (max-width: 1080px) {
+  .about_text-reverse {
+    margin: 0 0 75px;
+  }
 }
 
 .aboutContainer:last-child {
@@ -224,6 +244,11 @@ header {
   box-sizing: border-box;
   padding: 60px 20px 144px 20px;
 }
+@media screen and (max-width: 1080px) {
+  .planSec {
+    padding: 60px 20px;
+  }
+}
 
 .notionSec {
   max-width: 1920px;
@@ -240,15 +265,27 @@ header {
 
 .accessWrap {
   display: flex;
-  width: 1350px;
+  max-width: 1350px;
   margin: 70px auto;
   align-items: center;
 }
+@media screen and (max-width: 1080px) {
+  .accessWrap {
+    display: block;
+    text-align: center;
+  }
+}
 
 .accessTextWrap {
-  width: 100%;
+  max-width: 600px;
   line-height: 2;
   margin-left: 83px;
+}
+@media screen and (max-width: 1080px) {
+  .accessTextWrap {
+    margin: 0 auto;
+    padding: 30px;
+  }
 }
 
 .mapWrap {
@@ -339,14 +376,30 @@ header {
   max-width: 1920px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1080px) {
+  .cardContainer {
+    display: block;
+    text-align: center;
+  }
+}
 
 .card {
   width: 340px;
   margin-right: 94px;
 }
+@media screen and (max-width: 1080px) {
+  .card {
+    margin: 0 auto 50px;
+  }
+}
 
 .card:nth-of-type(3n) {
   margin-right: 0;
+}
+@media screen and (max-width: 1080px) {
+  .card:nth-of-type(3n) {
+    margin: 0 auto 50px;
+  }
 }
 
 .card_img {
@@ -376,6 +429,11 @@ header {
   height: 100px;
   margin-bottom: 20px;
   padding: 15px 39px 15px 10px;
+}
+@media screen and (max-width: 1080px) {
+  .media {
+    margin: 0 auto 20px;
+  }
 }
 
 .media_body {

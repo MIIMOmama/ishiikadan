@@ -1,3 +1,4 @@
+@use "../mixin" as m;
 
 .firstViewSec {
     width: 100%;
@@ -101,13 +102,18 @@
 .aboutContainer {
     display: flex;
     max-width: 1920px;
-    max-height: 545px;
     margin-bottom: 122px;
+
+    @include m.pc {
+    display: block;
+
+
+    }
 }
 
 
 .aboutImgWrap {
-    max-width: 1050px;
+    width: 100%;
     margin-right: 137px;
 }
 
@@ -116,8 +122,12 @@
 }
 
 .aboutWrap {
-    padding-right: 20px;
-    margin-top: 20px;
+    padding: 20px 20px 0 0;
+
+    @include m.pc {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 .about_title {
@@ -137,12 +147,19 @@
 }
 
 .aboutWrap-reverse {
-    padding-left: 20px;
+    padding: 20px 0 0 20px;
+    @include m.pc {
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 .about_text-reverse {
     line-height: 2;
     margin: 20px 137px 75px 0;
+    @include m.pc {
+        margin: 0 0 75px;
+    }
 }
 
 .aboutContainer:last-child {
@@ -173,6 +190,9 @@
     box-sizing: border-box;
     padding: 60px 20px 144px 20px;
 
+    @include m.pc {
+        padding: 60px 20px;
+    }
 }
 
 
@@ -199,15 +219,25 @@
 
 .accessWrap {
     display: flex;
-    width: 1350px;
+    max-width: 1350px;
     margin: 70px auto;
     align-items: center;
+
+    @include m.pc {
+        display: block;
+        text-align: center;
+    }
 }
 
 .accessTextWrap {
-    width: 100%;
+    max-width: 600px;
     line-height: 2;
     margin-left: 83px;
+
+    @include m.pc {
+        margin: 0 auto;
+        padding: 30px;
+    }
 }
 
 
