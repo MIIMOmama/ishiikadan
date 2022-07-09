@@ -91,13 +91,15 @@
             <a href="index.html" class="headerLogo_text">石井花壇</a>
           </h1><!-- /.headerLogo_text -->
         </div><!-- /.headerLogoWrap -->
-        <nav class="globalNav">
-          <ul class="globalNav_list" id="js_nav">
-            <li class="globalNav_item"><a href="room.html" class="globalNav_link">お部屋</a></li><!-- /.globalNav_item -->
-            <li class="globalNav_item"><a href="meal.html" class="globalNav_link">お料理</a></li><!-- /.globalNav_item -->
-            <li class="globalNav_item"><a href="onsen.html" class="globalNav_link">温泉</a></li><!-- /.globalNav_item -->
-          </ul><!-- /.globalNav_list -->
-        </nav><!-- /.globalNav -->
+        <div class="sp-global-menu" id="js-global-menu" area-hidden="true">
+          <nav class="globalNav">
+            <ul class="globalNav_list" id="js_nav">
+              <li class="globalNav_item"><a href="room.html" class="globalNav_link">お部屋</a></li><!-- /.globalNav_item -->
+              <li class="globalNav_item"><a href="meal.html" class="globalNav_link">お料理</a></li><!-- /.globalNav_item -->
+              <li class="globalNav_item"><a href="onsen.html" class="globalNav_link">温泉</a></li><!-- /.globalNav_item -->
+            </ul><!-- /.globalNav_list -->
+          </nav><!-- /.globalNav -->
+        </div>
       </div><!-- /.headerWrap -->
       <a href="#" class="globalButton" id="modalButton">
         <span class="logoImgWrap">
@@ -109,6 +111,11 @@
         </span><!-- /.logoImgWrap -->
         <span class="globalButton_body">宿泊予約</span><!-- /.globalButton_body -->
       </a><!-- /.globalButton -->
+      <button type="button" id="js-hamburger" class="hamburgerButton hamburger" aria-controls="js-glabal-menu" aria-expanded="false" area-label="メニューを開閉する">
+        <span class="hamburger__line">
+        </span>
+      </button>
+
     </div><!-- /.headerInner -->
   </header>
 

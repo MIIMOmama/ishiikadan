@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 header {
   position: fixed;
   z-index: 99;
@@ -32,6 +38,7 @@ header {
   display: flex;
   margin-right: 120px;
   align-items: center;
+  min-width: 151px;
 }
 
 .headerLogo_title {
@@ -57,6 +64,113 @@ header {
   display: none;
 }
 
+#js-hamburger {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  #js-hamburger {
+    display: block;
+  }
+}
+
+.hamburgerButton {
+  display: inline-block;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: fixed;
+  top: 16px;
+  right: 20px;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 2rem transparent;
+  outline: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.hamburger:hover, .hamburger:focus {
+  box-shadow: 0 0 0.5rem rgba(161, 161, 161, 0.5);
+}
+
+.hamburger__line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 18px;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+.hamburger__line::before, .hamburger__line::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  content: "";
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.hamburger__line::before {
+  top: -5px;
+}
+
+.hamburger__line::after {
+  top: 5px;
+}
+
+.hamburger[aria-expanded=true] {
+  border: 1px solid #fff !important;
+}
+
+.hamburger[aria-expanded=true] .hamburger__line {
+  background-color: transparent;
+}
+.hamburger[aria-expanded=true] .hamburger__line::before, .hamburger[aria-expanded=true] .hamburger__line::after {
+  top: 0;
+  background-color: #fff;
+}
+
+.hamburger[aria-expanded=true] .hamburger__line::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger[aria-expanded=true] .hamburger__line::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sp-global-menu {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #978F10;
+  color: #fff;
+  visibility: hidden;
+}
+
 .firstViewSec {
   width: 100%;
   position: relative;
@@ -69,7 +183,7 @@ header {
 }
 
 .firstView_text {
-  z-index: 999;
+  z-index: 1;
   position: absolute;
   color: #fff;
   top: 30%;
@@ -112,14 +226,22 @@ header {
   background-size: contain;
   box-sizing: border-box;
   width: 100%;
+  padding: 20px;
 }
 
 .conceptWrap {
   width: 100%;
-  padding: 149px 20px;
+  padding: 149px 0;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+}
+@media screen and (max-width: 1080px) {
+  .conceptWrap {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .concept_title {
@@ -129,10 +251,21 @@ header {
   line-height: 1.8;
   letter-spacing: 0.5rem;
 }
+@media screen and (max-width: 1080px) {
+  .concept_title {
+    writing-mode: initial;
+    margin-left: 20px;
+  }
+}
 
 .concept_title-high {
   display: block;
   margin-top: -60px;
+}
+@media screen and (max-width: 1080px) {
+  .concept_title-high {
+    margin-left: -20px;
+  }
 }
 
 .concept_text {
@@ -142,11 +275,23 @@ header {
   line-height: 1.8;
   letter-spacing: 0.5rem;
 }
+@media screen and (max-width: 1080px) {
+  .concept_text {
+    writing-mode: initial;
+    padding: 20px;
+    margin-left: 20px;
+  }
+}
 
 .concept_text-end {
   writing-mode: vertical-rl;
   text-align: right;
   letter-spacing: 0.5rem;
+}
+@media screen and (max-width: 1080px) {
+  .concept_text-end {
+    writing-mode: initial;
+  }
 }
 
 .aboutSec {
@@ -276,6 +421,10 @@ header {
   }
 }
 
+.accessImg {
+  width: 100%;
+}
+
 .accessTextWrap {
   max-width: 600px;
   line-height: 2;
@@ -327,6 +476,12 @@ header {
 .globalNav_list {
   display: flex;
   color: #fff;
+}
+@media screen and (max-width: 1080px) {
+  .globalNav_list {
+    margin: 50% 40%;
+    font-size: 2rem;
+  }
 }
 
 .globalNav_list-scroll {
@@ -556,6 +711,11 @@ header {
   color: #ffffff;
   font-weight: bold;
   padding: 19px 37px;
+}
+@media screen and (max-width: 1080px) {
+  .globalButton {
+    margin: 0 auto;
+  }
 }
 
 .globalButton_body {

@@ -130,3 +130,23 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     });
 });
+
+
+// ハンバーガーメニュー
+
+const jsHamburger = document.getElementById('js-hamburger');
+const body = document.body;
+const spHeaderMenu = document.getElementById('js-global-menu');
+
+jsHamburger.addEventListener('click', function() {
+    body.classList.toggle('is-drawerActive')
+    if(this.getAttribute('aria-expanded') == 'false') {
+        this.setAttribute('aria-expanded', 'true');
+        spHeaderMenu.style.visibility = "visible";
+        spHeadetMenu.setAttribute('aria-hidden', 'false')
+    } else {
+        this.setAttribute('aria-expanded', 'false')
+        spHeaderMenu.style.visibility = "hidden";
+        spHeaderMenu.setAttribute('aria-hidden', 'true')
+    };
+});

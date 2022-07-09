@@ -11,7 +11,7 @@
 }
 
 .firstView_text {
-    z-index: 999;
+    z-index: 1;
     position: absolute;
     color: #fff;
     top: 30%;
@@ -56,15 +56,22 @@
     background-size: contain;
     box-sizing: border-box;
     width: 100%;
+    padding: 20px;
 
 }
 
 .conceptWrap {
     width: 100%;
-    padding: 149px 20px;
+    padding: 149px 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+
+    @include m.pc {
+        max-width: 700px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 .concept_title {
     font-size: 1.75rem;
@@ -72,10 +79,19 @@
     margin-left: 118px;
     line-height: 1.8;
     letter-spacing: 0.5rem;
+
+    @include m.pc {
+        writing-mode: initial;
+        margin-left: 20px;
+    }
 }
 .concept_title-high {
     display: block;
     margin-top: -60px;
+
+    @include m.pc {
+        margin-left: -20px;
+    }
 }
 .concept_text {
     writing-mode: vertical-rl;
@@ -83,11 +99,22 @@
     margin-left: 118px;
     line-height: 1.8;
     letter-spacing: 0.5rem;
+
+    @include m.pc {
+        writing-mode: initial;
+        padding: 20px;
+        margin-left: 20px;
+
+    }
 }
 .concept_text-end {
     writing-mode: vertical-rl;
     text-align: right;
     letter-spacing: 0.5rem;
+
+    @include m.pc {
+        writing-mode: initial;
+    }
 }
 
 
@@ -227,6 +254,10 @@
         display: block;
         text-align: center;
     }
+}
+
+.accessImg {
+    width: 100%;
 }
 
 .accessTextWrap {
