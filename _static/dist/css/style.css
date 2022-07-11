@@ -92,7 +92,7 @@ header {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   box-shadow: 0 0 2rem transparent;
   outline: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -100,6 +100,10 @@ header {
 }
 .hamburger:hover, .hamburger:focus {
   box-shadow: 0 0 0.5rem rgba(161, 161, 161, 0.5);
+}
+
+.hamburger-scroll {
+  border: 2px solid #707070;
 }
 
 .hamburger__line {
@@ -124,6 +128,10 @@ header {
   content: "";
   -webkit-transition: inherit;
   transition: inherit;
+}
+
+.hamburgerLine-scroll {
+  background-color: #707070;
 }
 
 .hamburger__line::before {
@@ -707,6 +715,8 @@ header {
 }
 
 .globalButton {
+  box-sizing: border-box;
+  min-width: 157px;
   background-color: #978F10;
   color: #ffffff;
   font-weight: bold;
@@ -714,7 +724,7 @@ header {
 }
 @media screen and (max-width: 1080px) {
   .globalButton {
-    margin: 0 auto;
+    margin-right: 50%;
   }
 }
 

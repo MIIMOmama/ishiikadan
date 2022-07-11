@@ -2,13 +2,15 @@
 
 
 .globalButton {
+    box-sizing: border-box;
+    min-width: 157px;
     background-color: #978F10;
     color: #ffffff;
     font-weight: bold;
     padding: 19px 37px;
 
     @include m.pc {
-        margin: 0 auto;
+        margin-right: 50%;
     }
 }
 .globalButton_body {

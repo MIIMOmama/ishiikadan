@@ -22,17 +22,22 @@ window.addEventListener("scroll",function() {
     const navList = document.querySelector("#js_nav");
     const js_logo = document.querySelector(".headerLogo_img-hide");
     const js_hide = document.querySelector(".headerLogo_img");
+    const hamburger = document.querySelector(".hamburger");
+    const hamburgerLine = document.querySelector(".hamburger__line");
 
     header.classList.toggle("header-scroll", window.scrollY>1);
     h1.classList.toggle("headerLogo_text-scroll",window.scrollY>1);
     navList.classList.toggle("globalNav_list-scroll",window.scrollY>1);
     js_logo.setAttribute("id","js_logo",window.scrollY>1);
     js_hide.setAttribute("id","js_hide",window.scrollY>1);
+    hamburger.classList.toggle("hamburger-scroll",window.scrollY>1);
+    hamburger.classList.toggle("hamburgerLine-scroll",window.scrollY>1);
+
+
 
     if(window.scrollY < 1) {
         js_logo.setAttribute("id","js_logo-hide");
         js_hide.setAttribute("id","js_hide-hide");
-    
     }
 });
 
@@ -69,7 +74,7 @@ const config = {
 flatpickr('#flatpickr', config);
 
 
-// タブ↓
+// タブ↓候補
 
 // document.addEventListener('DOMContentLoaded', () =>{
 // const tabTriggers = document.querySelectorAll('.js-tab-trigger');
@@ -98,6 +103,8 @@ flatpickr('#flatpickr', config);
 //         })
 //     });
 // });
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // タブメニュークラス'.js-tab-trigger'を持つ要素を取得
     const tabTriggers = document.querySelectorAll('.js-tab-trigger');
