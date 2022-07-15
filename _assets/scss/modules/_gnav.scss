@@ -1,0 +1,38 @@
+@use "../mixin" as m;
+
+.globalNav_list {
+    display: flex;
+    color: #fff;
+
+    @include m.pc {
+        margin: 50% 40%;
+        font-size: 2rem;
+    }
+}
+.globalNav_list-scroll {
+    color: #000;
+}
+
+.globalNav_item {
+    margin-right: 30px;
+}
+
+.linkNav {
+    width: 100px;
+    margin: 0 auto 96px;
+
+}
+
+.linkNav_list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    letter-spacing: 0.8rem;
+
+
+}
+
+.linkNav_item {
+    writing-mode: vertical-rl;
+}
+

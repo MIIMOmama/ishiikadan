@@ -1,0 +1,8 @@
+@use "../mixin" as m;
+
+html {
+    @include m.pc {
+        font-size: 75%;
+    }
+}
+

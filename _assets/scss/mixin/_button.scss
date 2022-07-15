@@ -1,0 +1,45 @@
+@use "../mixin" as m;
+
+
+.globalButton {
+    box-sizing: border-box;
+    min-width: 157px;
+    background-color: #978F10;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 19px 37px;
+
+    @include m.pc {
+        margin-right: 50%;
+    }
+}
+.globalButton_body {
+    padding-left: 10px;
+}
+
+.aboutButton {
+    padding: 20px 52px;
+    border: solid 1px #707070;
+}
+.aboutButton--s{
+    padding: 20px 44px;
+}
+
+// 次回からmixinで定義する
+
+$initType: 'normal';
+@mixin _btn($type:$initType){
+
+  //共通スタイル
+
+  //サイト共通ボタンのスタイル1
+@if( $type == 'normal' ){
+    //スタイル
+}
+
+  //サイト共通ボタンのスタイル2
+@else if( $type == 'large' ){
+    //スタイル
+}
+
+}
