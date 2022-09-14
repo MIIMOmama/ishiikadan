@@ -1,10 +1,4 @@
 @charset "UTF-8";
-@media screen and (max-width: 1080px) {
-  html {
-    font-size: 75%;
-  }
-}
-
 header {
   position: fixed;
   z-index: 99;
@@ -32,14 +26,12 @@ header {
 .headerWrap {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 
 .headerLogoWrap {
   display: flex;
   margin-right: 120px;
   align-items: center;
-  min-width: 151px;
 }
 
 .headerLogo_title {
@@ -65,121 +57,6 @@ header {
   display: none;
 }
 
-#js-hamburger {
-  display: none;
-}
-@media screen and (max-width: 1080px) {
-  #js-hamburger {
-    display: block;
-  }
-}
-
-.hamburgerButton {
-  display: inline-block;
-  text-decoration: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.hamburger {
-  position: fixed;
-  top: 16px;
-  right: 20px;
-  z-index: 3;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  box-shadow: 0 0 2rem transparent;
-  outline: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.hamburger:hover, .hamburger:focus {
-  box-shadow: 0 0 0.5rem rgba(161, 161, 161, 0.5);
-}
-
-.hamburger-scroll {
-  border: 2px solid #707070;
-}
-
-.hamburger__line {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 18px;
-  height: 2px;
-  background-color: #fff;
-  -webkit-transition: inherit;
-  transition: inherit;
-}
-.hamburger__line::before, .hamburger__line::after {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
-  content: "";
-  -webkit-transition: inherit;
-  transition: inherit;
-}
-
-.hamburgerLine-scroll {
-  background-color: #707070;
-}
-
-.hamburger__line::before {
-  top: -5px;
-}
-
-.hamburger__line::after {
-  top: 5px;
-}
-
-.hamburger[aria-expanded=true] {
-  border: 1px solid #fff !important;
-}
-
-.hamburger[aria-expanded=true] .hamburger__line {
-  background-color: transparent;
-}
-.hamburger[aria-expanded=true] .hamburger__line::before, .hamburger[aria-expanded=true] .hamburger__line::after {
-  top: 0;
-  background-color: #fff;
-}
-
-.hamburger[aria-expanded=true] .hamburger__line::before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.hamburger[aria-expanded=true] .hamburger__line::after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.sp-global-menu {
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  height: 100vh;
-  background-color: #978F10;
-  color: #fff;
-  visibility: hidden;
-}
-
 .firstViewSec {
   width: 100%;
   position: relative;
@@ -192,16 +69,26 @@ header {
 }
 
 .firstView_text {
-  z-index: 1;
+  z-index: 999;
   position: absolute;
   color: #fff;
   top: 30%;
   right: 20%;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   font-size: 2.125rem;
   line-height: 1.8;
   letter-spacing: 10px;
   font-weight: bold;
+}
+
+@-webkit-keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
 }
 
 @keyframes zoomUp {
@@ -215,7 +102,8 @@ header {
 .swiper-slide-active .slide-img,
 .swiper-slide-duplicate-active .slide-img,
 .swiper-slide-prev .slide-img {
-  animation: zoomUp 10s linear 0s 1 normal both;
+  -webkit-animation: zoomUp 10s linear 0s 1 normal both;
+          animation: zoomUp 10s linear 0s 1 normal both;
 }
 
 .slide-img {
@@ -226,7 +114,8 @@ header {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-sizing: border-box;
 }
 
@@ -235,72 +124,45 @@ header {
   background-size: contain;
   box-sizing: border-box;
   width: 100%;
-  padding: 20px;
 }
 
 .conceptWrap {
   width: 100%;
-  padding: 149px 0;
+  padding: 149px 20px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
-@media screen and (max-width: 1080px) {
-  .conceptWrap {
-    max-width: 700px;
-    display: block;
-    margin: 0 auto;
-  }
-}
 
 .concept_title {
   font-size: 1.75rem;
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   margin-left: 118px;
   line-height: 1.8;
   letter-spacing: 0.5rem;
-}
-@media screen and (max-width: 1080px) {
-  .concept_title {
-    writing-mode: initial;
-    margin-left: 20px;
-  }
 }
 
 .concept_title-high {
   display: block;
   margin-top: -60px;
 }
-@media screen and (max-width: 1080px) {
-  .concept_title-high {
-    margin-left: -20px;
-  }
-}
 
 .concept_text {
-  writing-mode: vertical-rl;
-  text-orientation: upright;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+          text-orientation: upright;
   margin-left: 118px;
   line-height: 1.8;
   letter-spacing: 0.5rem;
 }
-@media screen and (max-width: 1080px) {
-  .concept_text {
-    writing-mode: initial;
-    padding: 20px;
-    margin-left: 20px;
-  }
-}
 
 .concept_text-end {
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
   text-align: right;
   letter-spacing: 0.5rem;
-}
-@media screen and (max-width: 1080px) {
-  .concept_text-end {
-    writing-mode: initial;
-  }
 }
 
 .aboutSec {
@@ -312,16 +174,12 @@ header {
 .aboutContainer {
   display: flex;
   max-width: 1920px;
+  max-height: 545px;
   margin-bottom: 122px;
-}
-@media screen and (max-width: 1080px) {
-  .aboutContainer {
-    display: block;
-  }
 }
 
 .aboutImgWrap {
-  width: 100%;
+  max-width: 1050px;
   margin-right: 137px;
 }
 
@@ -330,13 +188,8 @@ header {
 }
 
 .aboutWrap {
-  padding: 20px 20px 0 0;
-}
-@media screen and (max-width: 1080px) {
-  .aboutWrap {
-    padding: 20px;
-    text-align: center;
-  }
+  padding-right: 20px;
+  margin-top: 20px;
 }
 
 .about_title {
@@ -356,23 +209,12 @@ header {
 }
 
 .aboutWrap-reverse {
-  padding: 20px 0 0 20px;
-}
-@media screen and (max-width: 1080px) {
-  .aboutWrap-reverse {
-    padding: 20px;
-    text-align: center;
-  }
+  padding-left: 20px;
 }
 
 .about_text-reverse {
   line-height: 2;
   margin: 20px 137px 75px 0;
-}
-@media screen and (max-width: 1080px) {
-  .about_text-reverse {
-    margin: 0 0 75px;
-  }
 }
 
 .aboutContainer:last-child {
@@ -398,11 +240,6 @@ header {
   box-sizing: border-box;
   padding: 60px 20px 144px 20px;
 }
-@media screen and (max-width: 1080px) {
-  .planSec {
-    padding: 60px 20px;
-  }
-}
 
 .notionSec {
   max-width: 1920px;
@@ -419,31 +256,15 @@ header {
 
 .accessWrap {
   display: flex;
-  max-width: 1350px;
+  width: 1350px;
   margin: 70px auto;
   align-items: center;
 }
-@media screen and (max-width: 1080px) {
-  .accessWrap {
-    display: block;
-    text-align: center;
-  }
-}
-
-.accessImg {
-  width: 100%;
-}
 
 .accessTextWrap {
-  max-width: 600px;
+  width: 100%;
   line-height: 2;
   margin-left: 83px;
-}
-@media screen and (max-width: 1080px) {
-  .accessTextWrap {
-    margin: 0 auto;
-    padding: 30px;
-  }
 }
 
 .mapWrap {
@@ -486,12 +307,6 @@ header {
   display: flex;
   color: #fff;
 }
-@media screen and (max-width: 1080px) {
-  .globalNav_list {
-    margin: 50% 40%;
-    font-size: 2rem;
-  }
-}
 
 .globalNav_list-scroll {
   color: #000;
@@ -514,7 +329,8 @@ header {
 }
 
 .linkNav_item {
-  writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
 }
 
 .footer {
@@ -540,30 +356,14 @@ header {
   max-width: 1920px;
   margin: 0 auto;
 }
-@media screen and (max-width: 1080px) {
-  .cardContainer {
-    display: block;
-    text-align: center;
-  }
-}
 
 .card {
   width: 340px;
   margin-right: 94px;
 }
-@media screen and (max-width: 1080px) {
-  .card {
-    margin: 0 auto 50px;
-  }
-}
 
 .card:nth-of-type(3n) {
   margin-right: 0;
-}
-@media screen and (max-width: 1080px) {
-  .card:nth-of-type(3n) {
-    margin: 0 auto 50px;
-  }
 }
 
 .card_img {
@@ -593,11 +393,6 @@ header {
   height: 100px;
   margin-bottom: 20px;
   padding: 15px 39px 15px 10px;
-}
-@media screen and (max-width: 1080px) {
-  .media {
-    margin: 0 auto 20px;
-  }
 }
 
 .media_body {
@@ -716,17 +511,10 @@ header {
 }
 
 .globalButton {
-  box-sizing: border-box;
-  min-width: 157px;
   background-color: #978F10;
   color: #ffffff;
   font-weight: bold;
   padding: 19px 37px;
-}
-@media screen and (max-width: 1080px) {
-  .globalButton {
-    margin-right: 50%;
-  }
 }
 
 .globalButton_body {

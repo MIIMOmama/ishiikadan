@@ -1,0 +1,180 @@
+@use "../mixin" as m;
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    margin: 0 auto;
+
+    @include m.pc {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+.card {
+    width: 340px;
+    margin-right: 94px;
+
+    @include m.pc {
+        margin: 0 auto 50px;
+    }
+}
+
+.card:nth-of-type(3n) {
+    margin-right: 0;
+    
+    @include m.pc {
+        margin: 0 auto 50px;
+    }
+}
+
+.card_img {
+    margin-bottom: 32px;
+}
+
+.card_title {
+    font-size: 1.25rem;
+    margin-bottom: 36px;
+    line-height: 2;
+}
+
+.card_text {
+    line-height: 2;
+}
+
+
+
+.mediaContainer {
+    max-width: 1210px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.media {
+    display: flex;
+    background-color: #F6F6F6;
+    width: 530px;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 15px 39px 15px 10px;
+
+    @include m.pc {
+        margin: 0 auto 20px;
+    }
+}
+
+.media_body {
+    width: 100%;
+    margin-left: 30px;
+}
+.media_date {
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+
+
+.modal{
+    display: none; 
+}
+.is-show {
+    z-index: 999;
+    display: block;
+    background: rgba(255,255,255,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.modal_content{
+    background: #fff;
+    width: 500px;
+    margin: 20% auto;
+    padding-bottom: 90px;
+}
+
+.modalWrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 40%;
+}
+
+.reserve_title {
+    font-size: 1.25rem;
+    margin-top: 29px;
+}
+
+.modalButton-close {
+    border: none;
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.reserveWrap {
+    width: 429px;
+    margin: 29px auto 30px;
+    padding: 35px 0;
+    border-top: 1px solid #E7E7E7;
+}
+
+.reserve_detail {
+    display: block;
+    margin-bottom: 14px;
+}
+.reserve_body {
+    display: block;
+    width: 417px;
+    margin-bottom: 14px;
+    border: 1px solid #E7E7E7;
+    padding: 9px 0 9px 10px;
+}
+
+.textBox, .select {
+    border: none;
+}
+
+.reserve_button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 198px;
+    padding: 13px 0px;
+    border: solid 1px #707070;
+}
+
+.select:invalid {
+    color: #797878;
+}
+
+.tabMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+.tabTrigger {
+    cursor: pointer;
+    display: block;
+    margin: 0 26px;
+}
+
+.tabTrigger.is-active {
+    border-bottom: 1px solid #707070;
+}
+
+.tabContent_item {
+    display: none;
+}
+
+.tabContent_item.is-active {
+    max-width: 1210px;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
